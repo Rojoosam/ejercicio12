@@ -3,16 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Flores</title>
+    <title>Módulo 3 - Blog Académico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0066cc;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #004d99;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0066cc;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+        }
+        .resources {
+            margin-top: 10px;
+            list-style: none;
+            padding: 0;
+        }
+        .resources li {
+            margin: 5px 0;
+        }
+        .resources a {
+            color: #0066cc;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola, Mundo!</h1>
-    <form id="contact-form">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Enviar</button>
-    </form>
+    <header>
+        <h1>Módulo 3 - Blog Académico</h1>
+    </header>
+    <nav>
+        <a href="#subtema1">DUDH</a>
+        <a href="#subtema2">Carta de la Tierra</a>
+        <a href="#subtema3">Ética del Diálogo</a>
+        <a href="#subtema4">Empatía</a>
+        <a href="#subtema5">Capital Social</a>
+    </nav>
+
+    <div class="container">
+        <section id="subtema1">
+            <h2>Declaración Universal de los Derechos Humanos</h2>
+            <p>La DUDH establece un marco ético global para garantizar la dignidad y los derechos básicos de todos los individuos.</p>
+            <ul class="resources">
+                <li><a href="https://www.youtube.com" target="_blank">Video explicativo</a></li>
+                <li><a href="#">Infografía interactiva</a></li>
+                <li><a href="#">Juego educativo</a></li>
+            </ul>
+        </section>
+
+        <section id="subtema2">
+            <h2>La Carta de la Tierra</h2>
+            <p>Promueve principios de sostenibilidad y justicia social para proteger el planeta.</p>
+            <ul class="resources">
+                <li><a href="#">Documental</a></li>
+                <li><a href="#">Imagen interactiva</a></li>
+                <li><a href="#">Actividad grupal</a></li>
+            </ul>
+        </section>
+
+        <section id="subtema3">
+            <h2>Ética del Diálogo e Interdependencia</h2>
+            <p>El diálogo ético fomenta acuerdos y resolución de conflictos en sociedades multiculturales.</p>
+            <ul class="resources">
+                <li><a href="#">Podcast educativo</a></li>
+                <li><a href="#">Artículo interactivo</a></li>
+                <li><a href="#">Simulación virtual</a></li>
+            </ul>
+        </section>
+
+        <section id="subtema4">
+            <h2>Empatía y Entendimiento Intercultural</h2>
+            <p>La empatía permite comprender perspectivas diversas y construir relaciones significativas.</p>
+            <ul class="resources">
+                <li><a href="#">Video educativo</a></li>
+                <li><a href="#">Dinámica grupal</a></li>
+                <li><a href="#">Mapa interactivo</a></li>
+            </ul>
+        </section>
+
+        <section id="subtema5">
+            <h2>Capital Social y Ciudadanía</h2>
+            <p>El capital social fortalece la democracia y fomenta la participación activa de los ciudadanos.</p>
+            <ul class="resources">
+                <li><a href="#">Infografía</a></li>
+                <li><a href="#">Video entrevista</a></li>
+                <li><a href="#">Simulador en línea</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Blog Académico Módulo 3</p>
+    </footer>
 </body>
 </html>
