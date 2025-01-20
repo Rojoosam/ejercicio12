@@ -1,4 +1,4 @@
-name: Validate and Deploy HTML
+name: Deploy index.html to GitHub Pages
 
 on:
   push:
@@ -8,14 +8,16 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: success()
 
     steps:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy index.html to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: .
+          keep_files: false
+          exclude_assets: |
+            !index.html
