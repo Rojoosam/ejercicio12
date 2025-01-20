@@ -21,3 +21,4 @@ jobs:
           keep_files: false
           exclude_assets: |
             !index.html
+            !images/** 
